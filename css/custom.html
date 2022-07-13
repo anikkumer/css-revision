@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Custom Property</title>
+      <style>
+            :root {
+                  --main-color: orange;
+                  --border-color: green;
+                  --background-color: slateblue;
+                  --dark-border: 2x solid black;
+                  --side-width: 200px;
+            }
+
+            h1 {
+                  color: var(--main-color);
+            }
+
+            p {
+                  color: var(--main-color);
+                  border: ;
+            }
+
+            h2 {
+                  color: var(--main-color);
+                  border: 2px solid var(--border-color);
+            }
+
+            h6 {
+                  color: var(--main-color);
+            }
+
+            footer {
+                  clear: both;
+                  color: var(--main-color);
+                  background-color: var(--background-color);
+            }
+
+            aside,
+            .blogs {
+                  float: left;
+                  height: 500px;
+            }
+
+            aside {
+                  background-color: hotpink;
+                  width: var(--side-width)
+            }
+
+            .blogs {
+                  background-color: darkgoldenrod;
+                  width: calc(100% - 2*var(--side-width))
+            }
+      </style>
+</head>
+
+<body>
+      <header>
+            <h1>I am Exploring Custom Properties</h1>
+            <p>Welcome to my Website</p>
+      </header>
+      <main>
+            <h2>My Awesome content</h2>
+            <h6>My Tiny Heading</h6>
+            <section>
+                  <aside class="side-nav">
+                        My side navigation
+                  </aside>
+                  <div class="blogs">
+                        <h3>Blogs</h3>
+                  </div>
+            </section>
+      </main>
+      <footer>
+            <p><small>copyright</small></p>
+      </footer>
+</body>
+
+</html>
